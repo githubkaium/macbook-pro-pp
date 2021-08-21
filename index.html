@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="grid grid-cols-2 gap-8 py-8">
+            <!-- Left container -->
+            <div>
+                <div class="flex justify-center">
+                    <img class="container-flud w-3/5" src="images/mac.png" alt="iMac">
+                </div>
+            </div>
+            <!-- Right container -->
+            <div>
+                <!-- Heading -->
+                <div>
+                    <h1 class="text-center text-3xl font-bold">Customize your Blue 24-inch iMac with Apple M1 chip.
+                    </h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 prtformance cores and 4 efficiency cores...</p>
+                </div>
+                <!-- Memory unit -->
+                <div class="mt-8">
+                    <h1 class="font-medium">Memory</h1>
+                    <button id="memory1" class="button border-gray border-2 p-2 rounded">8GB unified memory</button>
+                    <button id="memory2" class="button border-gray border-2 p-2 rounded">16GB
+                        unified
+                        memory</button>
+                </div>
+                <!-- Storage unit -->
+                <div class="mt-8">
+                    <h1 class="font-medium">Storage</h1>
+                    <button id="storage1" class="button border-gray border-2 p-2 rounded">256GB SSD storage</button>
+                    <button id="storage2" class="button border-gray border-2 p-2 rounded">512GB SSD storage</button>
+                    <button id="storage3" class="button border-gray border-2 p-2 rounded">1TB SSD storage</button>
+                </div>
+                <!-- Delivery unit -->
+                <div class="mt-8">
+                    <h1 class="font-medium">Choose your delivery option</h1>
+                    <button id="delivery1" class="button border-gray border-2 p-2 rounded">Friday, Aug 27 FREE Prime
+                        Delivery</button>
+                    <button id="delivery2" class="button border-gray border-2 p-2 rounded">Friday, Aug 20 Delivery
+                        Charge
+                        $20</button>
+                </div>
+                <!-- Price Calculation unit -->
+                <div class="grid grid-rows-5 grid-cols-2 mt-8 w-1/2">
+                    <div class="border-b-2 border-gray">Best Price</div>
+                    <div class="border-b-2 border-gray justify text-center">$<span id="best-price">1290</span></div>
+                    <div class="border-b-2 border-gray">Extra Memory Cost</div>
+                    <div class="border-b-2 border-gray justify text-center">$<span id="memory-cost">0</span></div>
+                    <div class="border-b-2 border-gray">Extra Storage Cost</div>
+                    <div class="border-b-2 border-gray justify text-center">$<span id="storage-cost">0</span></div>
+                    <div class="border-b-2 border-black">Delivery Charge</div>
+                    <div class="border-b-2 border-black justify text-center">$<span id="delivery-charge">0</span></div>
+                    <div class="border-b-2 border-gray">Total Price</div>
+                    <div class="border-b-2 border-gray justify text-center">$<span id="total-price">1290</span></div>
+                </div>
+                <!-- Promo code unit -->
+                <div class="mt-4">
+                    <p>Add Promo code</p>
+                    <input id="input-promo" type="text" class="border border-gray p-1">
+                    <button id="apply-promo"
+                        class="border border-gray rounded bg-red-600 text-white py-1 px-2">Apply</button>
+                </div>
+            </div>
+        </section>
+        <section class="px-10">
+            <hr>
+            <!-- Grand Total -->
+            <p class=" text-center text-2xl font-medium py-2">Total: $<span id="grand-total">1290</span></p>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
